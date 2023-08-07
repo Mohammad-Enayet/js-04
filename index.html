@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Changing CSS Styling</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .wrapper-div{
+            width: 500px;
+            background-color: rgb(216, 122, 0);
+            padding: 4rem;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+        .wrapper-div h1{
+            font-size: 40px;
+        }
+        .wrapper-div button[type="button"]:nth-child(2){
+            background-color: rgb(0, 0, 0);
+            padding: 18px 30px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            border: 0px;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+        }
+        .wrapper-div button[type="button"]:nth-child(2):hover{
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+        }
+        .wrapper-div h2{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper-div">
+        <h1>JavaScript Changing CSS Stying</h1>
+        <button type="button" onclick="document.getElementById('heading-two').style.color='#fff '">Click to Change Font Color</button>
+
+        <h2 id="heading-two">This Is Heading Two Tag with 30px Font Size</h2>
+
+    </div>
+</body>
+</html>
